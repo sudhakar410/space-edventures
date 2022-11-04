@@ -1,0 +1,6 @@
+mutation CreateUser($parentEmail: String, $birthDate: Date!) {
+  userCreate(parentEmail: $parentEmail, birthDate: $birthDate) {
+    id
+    email
+  }
+}

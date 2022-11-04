@@ -1,0 +1,23 @@
+query Me($id: ID!) {
+  me(id: $id) {
+    id
+    email
+    token
+    locked
+    roles
+    profile {
+      name
+      displayName
+      profilePicture
+      rank {
+        id
+        name
+      }
+      flightHours
+      classHours
+    }
+    centers {
+      id
+    }
+  }
+}

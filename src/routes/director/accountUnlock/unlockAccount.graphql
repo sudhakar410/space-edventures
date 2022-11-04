@@ -1,0 +1,5 @@
+mutation UnlockAccount($centerId: ID!, $userId: ID!) {
+  unlockAccount(centerId: $centerId, userId: $userId) {
+    id
+  }
+}

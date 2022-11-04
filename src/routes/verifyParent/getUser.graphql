@@ -1,0 +1,12 @@
+query UserToVerify($id: ID!, $birthDate: Date!, $parentEmail: String!) {
+  userToVerify(id: $id, birthDate: $birthDate, parentEmail: $parentEmail) {
+    id
+    email
+    locked
+    verification {
+      idPhotoUrl
+      parentPhotoUrl
+      stripeCustomerId
+    }
+  }
+}

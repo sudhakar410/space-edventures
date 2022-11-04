@@ -1,0 +1,45 @@
+query CenterDirector($centerId: ID, $id: ID!) {
+  me(id: $id) {
+    id
+    roles(centerId: $centerId)
+    centers {
+      id
+      name
+      description
+      imageUrl
+      website
+      address {
+        description
+      }
+      simulatorCount
+      badgeCount
+      missionCount
+      flightRecordCount
+      # stripeCustomer {
+      #   email
+      #   subscriptions {
+      #     status
+      #     created
+      #     current_period_end
+      #     current_period_start
+      #     id
+      #     plan {
+      #       id
+      #       amount
+      #       interval
+      #       nickname
+      #       interval_count
+      #       trial_period_days
+      #     }
+      #   }
+      #   sources {
+      #     id
+      #     brand
+      #     last4
+      #     exp_year
+      #     exp_month
+      #   }
+      # }
+    }
+  }
+}

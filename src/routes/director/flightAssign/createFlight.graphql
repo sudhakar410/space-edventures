@@ -1,0 +1,8 @@
+mutation FlightRecordCreate(
+  $centerId: ID!
+  $flightRecords: [FlightRecordInput!]!
+) {
+  flightRecordBatchCreate(centerId: $centerId, flightRecords: $flightRecords) {
+    id
+  }
+}

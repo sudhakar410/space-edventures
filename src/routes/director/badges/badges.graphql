@@ -1,0 +1,9 @@
+query Badges($centerId: ID!) {
+  badges(type: badge, centerId: $centerId) {
+    id
+    name
+    description
+    type
+    image
+  }
+}

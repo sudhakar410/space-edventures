@@ -1,0 +1,12 @@
+query Missions($centerId: ID!) {
+  missions: badges(type: mission, centerId: $centerId) {
+    id
+    name
+    description
+    image
+    simulators {
+      id
+      name
+    }
+  }
+}

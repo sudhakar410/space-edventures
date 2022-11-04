@@ -1,0 +1,6 @@
+mutation CreateSimulator($name: String!, $centerId: ID!) {
+  simulatorCreate(name: $name, centerId: $centerId) {
+    id
+    name
+  }
+}

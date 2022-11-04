@@ -1,0 +1,8 @@
+query FlightTypes($centerId: ID!) {
+  flightTypes(centerId: $centerId) {
+    id
+    name
+    flightHours
+    classHours
+  }
+}

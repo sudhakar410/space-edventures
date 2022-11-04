@@ -1,0 +1,14 @@
+mutation BadgeChangeDescription(
+  $id: ID!
+  $description: String!
+  $centerId: ID!
+) {
+  badgeChangeDescription(
+    badgeId: $id
+    description: $description
+    centerId: $centerId
+  ) {
+    id
+    description
+  }
+}

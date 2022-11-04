@@ -1,0 +1,6 @@
+mutation API($centerId: ID!) {
+  centerSetApiToken(centerId: $centerId) {
+    id
+    apiToken
+  }
+}

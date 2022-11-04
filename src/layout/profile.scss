@@ -1,0 +1,38 @@
+.profile-container {
+  position: relative;
+  z-index: 10;
+}
+.profile {
+  max-width: 300px;
+  display: flex;
+  cursor: pointer;
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 0 5px;
+    }
+  }
+  .profile-rank {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: right;
+  }
+  .profile-hours {
+    display: flex;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
+.profile-extra-frame {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+}
+.profile-extra {
+  display: flex;
+  flex-direction: column;
+}
